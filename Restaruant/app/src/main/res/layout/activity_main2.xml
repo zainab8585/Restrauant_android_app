@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.wafaa.restaruant.Main2Activity">
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="match_parent"
+        android:scaleType="centerCrop"
+        android:layout_height="257dp"
+        android:src="@drawable/i2" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:text="Set Location ?"
+        android:textSize="30sp"
+        android:textAppearance="@style/TextAppearance.AppCompat" />
+
+    <Spinner
+        android:id="@+id/s1"
+        style="@style/Widget.AppCompat.Spinner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:layout_weight="1"></Spinner>
+<Spinner
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/s2"
+    android:layout_weight="1"
+    >
+</Spinner>
+ <Button
+     android:layout_width="match_parent"
+     android:layout_height="wrap_content"
+     android:text="Show Resteraunts"
+     android:textColor="#ffff"
+     android:gravity="center"
+     android:onClick="openRestrants"
+     android:textSize="30sp"
+     android:background="@drawable/buttonshape"
+     android:shadowColor="#A8A8A8"
+     android:shadowDx="0"
+     android:shadowDy="0"
+     android:shadowRadius="5"
+     android:layout_weight="1"
+     />
+</LinearLayout>

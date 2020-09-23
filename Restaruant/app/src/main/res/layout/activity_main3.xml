@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.wafaa.restaruant.Main3Activity">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_weight="1">
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/i3"
+            android:id="@+id/i1"
+            android:layout_margin="5dp"
+            android:layout_weight=".5"/>
+
+
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_gravity="left">
+            <include
+                layout="@layout/rating"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:id="@+id/rate1"
+                > </include>
+
+            <TextView
+                android:id="@+id/r1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="5dp"
+                android:layout_weight=".5"
+                android:gravity="center"
+                android:text="Mcdonland"
+                android:layout_below="@+id/rate1"
+                android:textAppearance="@style/TextAppearance.AppCompat" />
+
+
+        </RelativeLayout>
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_keyboard_arrow_right_black_24dp"
+            android:onClick="order"
+            android:layout_gravity="center_vertical"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" android:layout_weight="1">
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/i4"
+            android:id="@+id/i2"
+            android:layout_margin="5dp"
+            android:layout_weight=".5"/>
+
+
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_gravity="left">
+            <TextView
+                android:id="@+id/textView1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight=".5"
+                android:layout_margin="5dp"
+                android:gravity="center"
+                android:text="B7ri"
+                android:layout_below="@+id/rate2"
+                android:textAppearance="@style/TextAppearance.AppCompat" />
+            <include
+                layout="@layout/rating"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:id="@+id/rate2"
+                > </include>
+
+
+        </RelativeLayout>
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_keyboard_arrow_right_black_24dp"
+            android:onClick="order"
+            android:layout_gravity="center_vertical"/>
+    </LinearLayout>
+    <!--<View
+        android:layout_width="200dp"
+        android:layout_height="7dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="100sp"
+        android:background="#a40404" /> !-->
+   
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/i5"
+            android:id="@+id/i3"
+            android:layout_margin="5dp"
+            android:layout_weight=".5"/>
+
+
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_gravity="left">
+            <include
+                layout="@layout/rating"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:id="@+id/rate3"
+                > </include>
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight=".5"
+                android:layout_margin="5dp"
+                android:layout_below="@+id/rate3"
+                android:gravity="center"
+                android:text="Mcdonland"
+                android:textAppearance="@style/TextAppearance.AppCompat" />
+
+
+        </RelativeLayout>
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_keyboard_arrow_right_black_24dp"
+            android:onClick="order"
+            android:layout_gravity="center_vertical"/>
+    </LinearLayout>
+
+</LinearLayout>

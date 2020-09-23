@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Restaruant</string>
+    <string-array name="cities_array">
+        <item>ElMansoura</item>
+        <item>Cairo</item>
+    </string-array>
+
+
+</resources>
